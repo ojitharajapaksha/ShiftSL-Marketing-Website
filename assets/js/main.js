@@ -1,17 +1,5 @@
-/**
-* Template Name: Bootslander
-* Template URL: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 (function() {
   "use strict";
-
-  /**
-   * Apply .scrolled class to the body as the page is scrolled down
-   */
   function toggleScrolled() {
     const selectBody = document.querySelector('body');
     const selectHeader = document.querySelector('#header');
@@ -26,10 +14,10 @@
         let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
         if (scrollTop > lastScrollTop) {
-            // Scrolling down → Hide header
+            
             selectHeader.classList.add('hidden');
         } else {
-            // Scrolling up → Show header
+           
             selectHeader.classList.remove('hidden');
         }
 
@@ -41,9 +29,7 @@
 document.addEventListener('DOMContentLoaded', toggleScrolled);
 window.addEventListener('load', toggleScrolled);
 
-  /**
-   * Mobile nav toggle
-   */
+  /* Mobile nav toggle */
   const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
 
   function mobileNavToogle() {
@@ -53,9 +39,7 @@ window.addEventListener('load', toggleScrolled);
   }
   mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
 
-  /**
-   * Hide mobile nav on same-page/hash links
-   */
+  /* Hide mobile nav on same-page/hash links */
   document.querySelectorAll('#navmenu a').forEach(navmenu => {
     navmenu.addEventListener('click', () => {
       if (document.querySelector('.mobile-nav-active')) {
@@ -65,9 +49,7 @@ window.addEventListener('load', toggleScrolled);
 
   });
 
-  /**
-   * Toggle mobile nav dropdowns
-   */
+  /* Toggle mobile nav dropdowns */
   document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
     navmenu.addEventListener('click', function(e) {
       e.preventDefault();
@@ -77,9 +59,7 @@ window.addEventListener('load', toggleScrolled);
     });
   });
 
-  /**
-   * Preloader
-   */
+  /* Preloader */
   const preloader = document.querySelector('#preloader');
   if (preloader) {
     window.addEventListener('load', () => {
@@ -87,9 +67,7 @@ window.addEventListener('load', toggleScrolled);
     });
   }
 
-  /**
-   * Scroll top button
-   */
+  /* Scroll top button */
   let scrollTop = document.querySelector('.scroll-top');
 
   function toggleScrollTop() {
@@ -108,9 +86,7 @@ window.addEventListener('load', toggleScrolled);
   window.addEventListener('load', toggleScrollTop);
   document.addEventListener('scroll', toggleScrollTop);
 
-  /**
-   * Animation on scroll function and init
-   */
+  /* Animation on scroll function and init */
   function aosInit() {
     AOS.init({
       duration: 600,
@@ -121,21 +97,15 @@ window.addEventListener('load', toggleScrolled);
   }
   window.addEventListener('load', aosInit);
 
-  /**
-   * Initiate glightbox
-   */
+  /* Initiate glightbox */
   const glightbox = GLightbox({
     selector: '.glightbox'
   });
 
-  /**
-   * Initiate Pure Counter
-   */
+  /* Initiate Pure Counter */
   new PureCounter();
 
-  /**
-   * Init swiper sliders
-   */
+  /* Init swiper sliders */
   function initSwiper() {
     document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
       let config = JSON.parse(
@@ -152,18 +122,14 @@ window.addEventListener('load', toggleScrolled);
 
   window.addEventListener("load", initSwiper);
 
-  /**
-   * Frequently Asked Questions Toggle
-   */
+  /* Frequently Asked Questions Toggle */
   document.querySelectorAll('.faq-item h3, .faq-item .faq-toggle').forEach((faqItem) => {
     faqItem.addEventListener('click', () => {
       faqItem.parentNode.classList.toggle('faq-active');
     });
   });
 
-  /**
-   * Correct scrolling position upon page load for URLs containing hash links.
-   */
+  /* Correct scrolling position upon page load for URLs containing hash links.*/
   window.addEventListener('load', function(e) {
     if (window.location.hash) {
       if (document.querySelector(window.location.hash)) {
@@ -179,9 +145,7 @@ window.addEventListener('load', toggleScrolled);
     }
   });
 
-  /**
-   * Navmenu Scrollspy
-   */
+  /* Navmenu Scrollspy */
   let navmenulinks = document.querySelectorAll('.navmenu a');
 
   function navmenuScrollspy() {
