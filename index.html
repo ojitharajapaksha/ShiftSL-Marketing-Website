@@ -408,82 +408,89 @@
     </section><!-- /Faq Section -->
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section">
+<section id="contact" class="contact section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <div><span>Check Our</span> <span class="description-title">Contact</span></div>
-      </div><!-- End Section Title -->
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Contact</h2>
+    <div><span>Check Our</span> <span class="description-title">Contact</span></div>
+  </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade" data-aos-delay="100">
+  <div class="container" data-aos="fade" data-aos-delay="100">
 
-        <div class="row gy-4">
+    <div class="row gy-4">
 
-          <div class="col-lg-4">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Address</h3>
-                <p>Colombo, Sri Lanka</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Call Us</h3>
-                <p><a href="tel:+947771234567" class="cta-link">+94 777 123 4567</a></p>
-              </div>
-            </div><!-- End Info Item -->
-            
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email Us</h3>
-                <p><a href="mailto:info@shiftsl.com" class="cta-link">info@shiftsl.com</a></p>
-              </div>
-            </div><!-- End Info Item -->
-
+      <div class="col-lg-4">
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+          <i class="bi bi-geo-alt flex-shrink-0"></i>
+          <div>
+            <h3>Address</h3>
+            <p>Colombo, Sri Lanka</p>
           </div>
+        </div><!-- End Info Item -->
 
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
-
-        </div>
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+          <i class="bi bi-telephone flex-shrink-0"></i>
+          <div>
+            <h3>Call Us</h3>
+            <p><a href="tel:+947771234567" class="cta-link">+94 777 123 4567</a></p>
+          </div>
+        </div><!-- End Info Item -->
+        
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+          <i class="bi bi-envelope flex-shrink-0"></i>
+          <div>
+            <h3>Email Us</h3>
+            <p><a href="mailto:info@shiftsl.com" class="cta-link">info@shiftsl.com</a></p>
+          </div>
+        </div><!-- End Info Item -->
 
       </div>
 
-    </section><!-- /Contact Section -->
+      <div class="col-lg-8">
+        <!-- Web3Forms Integrated Contact Form -->
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" data-aos="fade-up" data-aos-delay="200">
+      
+          <!-- Replace this with your actual Web3Forms access key -->
+          <input type="hidden" name="access_key" value="4a016f25-7bd5-440a-9e40-7adb1b0208e1" />
+          <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+          <input type="hidden" name="from_name" value="My Website" />
+      
+          <div class="row gy-4">
+      
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required="" />
+            </div>
+      
+            <div class="col-md-6">
+              <input type="email" class="form-control" name="email" placeholder="Your Email" required="" />
+            </div>
+      
+            <!-- Replacing Subject field with Phone Number -->
+            <div class="col-md-12">
+              <input type="tel" class="form-control" name="phone" placeholder="Your Phone Number" required="" />
+            </div>
+      
+            <div class="col-md-12">
+              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+            </div>
+      
+            <div class="col-md-12 text-center">
+              <div class="error-message"></div>
+              <button class="form-submit" type="submit">Send Message</button>
+            </div>
+      
+          </div>
+        </form>
+      </div>
+      <!-- End Contact Form -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Contact Section -->
+
 
   </main>
 

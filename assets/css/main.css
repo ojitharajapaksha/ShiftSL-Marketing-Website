@@ -87,46 +87,28 @@ h6 {
   font-family: var(--heading-font);
 }
 
-/* PHP Email Form Messages
-------------------------------*/
-.php-email-form .error-message {
-  display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
+.form-submit {
+  background-color:var(--accent-color); /* Green background */
+  color: white; /* White text */
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.php-email-form .sent-message {
-  display: none;
-  color: #ffffff;
-  background: #059652;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
+/* Hover effect for the submit button */
+.form-submit:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  color: var(--contrast-color);
 }
 
-.php-email-form .loading {
-  display: none;
-  background: var(--surface-color);
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-}
-
-.php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
-  border-top-color: var(--surface-color);
-  animation: php-email-form-loading 1s linear infinite;
+/* Focus effect for accessibility */
+.form-submit:focus {
+  outline: none; /* Removes default outline */
+  box-shadow: var(--accent-color); /* Adds a shadow around the button */
 }
 
 @keyframes php-email-form-loading {
@@ -1362,7 +1344,7 @@ body, html {
 }
 
 .contact .php-email-form button[type=submit] {
-  color: var(--contrast-color);
+  color: var(--default-color);
   background: var(--accent-color);
   border: 0;
   padding: 10px 30px;
@@ -1371,5 +1353,5 @@ body, html {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 25%);
+  background: var(--default-color);
 }
