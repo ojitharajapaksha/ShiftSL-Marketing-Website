@@ -1133,6 +1133,11 @@ body, html {
 }
 
 /* Faq Section */
+.faq {
+  width: 95%;
+  margin: 0 auto;
+}
+
 .faq .content h3 {
   font-weight: 400;
   font-size: 34px;
