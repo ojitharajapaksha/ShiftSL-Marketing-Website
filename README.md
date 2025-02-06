@@ -21,7 +21,7 @@ This project is a fully responsive website designed using **HTML, CSS, JavaScrip
 - Experience smooth animations and transitions.
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](MIT LICENSE) file for details.
+This project is licensed under the MIT License. See the LICENSE file for details. For a direct view of the license, visit MIT License.
 
 ## Contact
 For inquiries or collaborations, reach out to me via:
