@@ -26,7 +26,6 @@ This project is licensed under the MIT License. See the MIT LICENSE file for det
 ## Contact
 For inquiries or collaborations, reach out to me via:
 - **Email**: ojitharajapaksha@gmail.com
-- 
 ---
 Thank you for checking out this website project!
 
