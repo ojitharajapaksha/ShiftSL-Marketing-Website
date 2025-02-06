@@ -1,3 +1,8 @@
+/*
+    Copyright © 2025 [Ojitha Rajapaksha]. All rights reserved.
+    This script is part of a website project licensed under the MIT License.
+*/
+
 (function() {
   "use strict";
   function toggleScrolled() {
