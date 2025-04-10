@@ -19,20 +19,18 @@
         let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
         if (scrollTop > lastScrollTop) {
-            
             selectHeader.classList.add('hidden');
         } else {
-           
             selectHeader.classList.remove('hidden');
         }
 
         lastScrollTop = scrollTop;
         window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
     });
-}
+  }
 
-document.addEventListener('DOMContentLoaded', toggleScrolled);
-window.addEventListener('load', toggleScrolled);
+  document.addEventListener('DOMContentLoaded', toggleScrolled);
+  window.addEventListener('load', toggleScrolled);
 
   /* Mobile nav toggle */
   const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
@@ -51,7 +49,6 @@ window.addEventListener('load', toggleScrolled);
         mobileNavToogle();
       }
     });
-
   });
 
   /* Toggle mobile nav dropdowns */
@@ -165,9 +162,33 @@ window.addEventListener('load', toggleScrolled);
       } else {
         navmenulink.classList.remove('active');
       }
-    })
+    });
   }
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
+
+  /* Popup Overlay */
+  window.addEventListener('load', function() {
+    const popupOverlay = document.getElementById('popupOverlay');
+    if (popupOverlay) {
+      // Show the popup overlay
+      popupOverlay.style.display = 'flex';
+
+      // Close the popup when the close button is clicked
+      const closePopup = document.getElementById('closePopup');
+      if (closePopup) {
+        closePopup.addEventListener('click', function() {
+          popupOverlay.style.display = 'none';
+        });
+      }
+
+      // Close popup when clicking outside the popup content
+      popupOverlay.addEventListener('click', function(event) {
+        if (event.target === this) {
+          this.style.display = 'none';
+        }
+      });
+    }
+  });
 
 })();

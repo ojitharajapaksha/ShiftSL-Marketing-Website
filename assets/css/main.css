@@ -1347,3 +1347,54 @@ body, html {
 .contact .php-email-form button[type=submit]:hover {
   background: var(--default-color);
 }
+
+/* Style for the popup background */
+.popup-overlay {
+  display: none; 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; 
+}
+
+/* Style for the popup content */
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  width: 90%; 
+  max-width: 600px; 
+  box-sizing: border-box;
+}
+
+/* Style for the popup image */
+.popup-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px; 
+}
+
+/* Style for the close button */
+.close-popup {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #2aed8d; /* Changed to green */
+  color: white; /* Changed text color to white */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+/* Hover effect for the close button */
+.close-popup:hover {
+  background-color: #2aed8d; /* Slightly darker green on hover */
+  transform: scale(1.05); 
+}
